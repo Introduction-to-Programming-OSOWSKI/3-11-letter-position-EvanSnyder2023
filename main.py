@@ -1,12 +1,12 @@
 def letterPos(w, x):
 
-    count = 0
-    for i in range(0,len(w)+ 1):
-        if w[i- 1] == x:
-            count = i
-            return count
+    word = 0
+    for i in range(0, len(w)):
+        if w[i] == x:
+            word = i + 1
+            return word
     else:
         return "none"
     
 
-print(letterPos("sunshine", "n"))
+print(letterPos("cea", "a"))
